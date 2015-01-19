@@ -1,0 +1,50 @@
+<hr class="featurette-divider">
+<div class="container single-report">
+  <div class="content-row">
+    <h1>Detalle del reporte</h1>
+    <div class="col-sm-12">
+
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="participacion">
+            <span class="sprite-2">PARTICIPACIÓN</span><br>
+          </div>
+          <span class="detail">#{{report.id}}</span>
+        </div>
+        <div class="col-sm-3">
+          <div class="tipo-participacion">
+            <span class="sprite-2">TIPO</span>
+          </div>
+          <div class="kind-{{report.kind}}"></div>
+        </div>
+        <div class="col-sm-3">
+          <div class="categoria">
+            <span class="sprite-2">CATEGORÍA</span>
+          </div>
+          <span class="detail">----</span>
+        </div>
+        <div class="col-sm-3">
+            <span class="sprite-2">FECHA Y HORA</span>
+            <span class="detail">{{ report.created }}</span>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <span>DESCRIPCIÓN</span>
+          <p>
+            Yo propongo que haya mejor educación en Colima, que se capaciten más y mejor a los maestros para que podamos tener educación de calidad.                            
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ubicacion">
+            <span class="sprite-2">UBICACIÓN</span>
+          </div>
+          <p>{{report.address }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

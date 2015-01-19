@@ -1,0 +1,16 @@
+/* ok, this is uggly */
+.kind-0:after{
+  content: 'Yo propongo'
+}
+.kind-1:after{
+  content: 'Yo sueño'
+}
+.kind-2:after{
+  content: 'Yo participo'
+}
+.kind-3:after{
+  content: 'Pregunta'
+}
+.link{
+  cursor:pointer;
+}

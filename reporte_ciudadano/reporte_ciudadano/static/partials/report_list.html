@@ -1,0 +1,24 @@
+<div class="container">
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-12">
+      <h2>Últimas participaciones</h2>
+      <table class="table table-condensed table-hover table-borderer">
+        <tr>
+          <th>Fecha y hora</th>
+          <th>Tipo de participación</th>
+          <th>Categoría</th>
+          <th>Reporte</th>
+          <th>Ubicación</th>
+        </tr>
+        <tr class="link" ng-repeat="report in reports" ng-click="showReport(report)">
+          <td>{{report.created}}</td>
+          <td><div class="kind-{{report.kind}}"></div></td>
+          <td>category</td>
+          <td>{{ report.description }}</td>
+          <td>{{report.address}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
