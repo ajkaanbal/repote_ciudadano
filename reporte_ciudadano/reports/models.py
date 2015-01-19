@@ -8,6 +8,7 @@ class Report(models.Model):
         (0, 'proposal'),
         (1, 'wish'),
         (2, 'participate'),
+        (3, 'question'),
     )
 
     kind = models.PositiveSmallIntegerField(choices=TYPES)

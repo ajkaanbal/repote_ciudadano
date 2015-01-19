@@ -11,6 +11,7 @@ from .serializers import ReportSerializer
 class ReportList(ListCreateAPIView):
     serializer_class = ReportSerializer
     queryset = Report.objects.all()
+    filter_fields = ('kind',)
 
 
 class Report(RetrieveUpdateDestroyAPIView):
