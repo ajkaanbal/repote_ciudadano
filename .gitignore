@@ -71,3 +71,5 @@ Session.vim
 __pycache__/
 local_settings.py
 
+#Sqlite
+*.sqlite3
