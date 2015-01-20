@@ -1,17 +1,15 @@
-/*global angular */
 'use strict';
 
 var reportApp = angular.module('reportApp', [
   'ngRoute',
   'ngCookies',
   'reportControllers',
-  'reportServices'
+  'reportServices',
+  'reportDirectives'
 ]);
 
 reportApp.config(['$routeProvider',
   function($routeProvider) {
-    // $httpProvider.defaults.headers.post['X-CSRFToken'] = $cookies.csrftoken;
-    // console.log($cookies);
 
     $routeProvider.
       when('/', {

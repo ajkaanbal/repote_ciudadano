@@ -14,3 +14,9 @@
 .link{
   cursor:pointer;
 }
+
+.google-map{
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
